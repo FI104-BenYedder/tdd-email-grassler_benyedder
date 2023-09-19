@@ -14,6 +14,7 @@ def test_is_valid_email__gueltige_Adressen(email):
     assert is_valid_email(email) == True
 
 
+
 @pytest.mark.parametrize("email", [
     ("testemail.com")   # Fehlendes @-Zeichen
 ,   ("test@email")      # Fehlende Top-Level-Domain
